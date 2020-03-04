@@ -25,6 +25,11 @@
         <module>springcloud-provider02</module>
         <module>springcloud-feign</module>
         <module>springcloud-hystrix</module>
+        <module>springcloud-order01</module>
+        <module>springcloud-zuul</module>
+        <module>springcloud-sidercar</module>
+        <module>springcloud-stream-output</module>
+        <module>springcloud-stream-input</module>
     </modules>
 
     <dependencies>

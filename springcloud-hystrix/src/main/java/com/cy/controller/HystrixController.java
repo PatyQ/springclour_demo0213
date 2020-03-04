@@ -14,7 +14,6 @@ public class HystrixController {
     @Autowired
     private FeignServer feignServer;
 
-
     @RequestMapping("getStu/{id}")
     @HystrixCommand(fallbackMethod = "haHa")
     public String getStudent(@PathVariable Integer id){

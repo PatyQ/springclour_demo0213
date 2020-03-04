@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123
-    url: jdbc:mysql:///test?useUnicode=true&characterEncoding=UTF8
+    url: jdbc:mysql:///test?serverTimezone=GMT%2B8
 
 #eureka客户端的yml
 eureka:
@@ -18,3 +18,7 @@ eureka:
     fetch-registry: true
 #mybatis:
 #  mapper-locations: classpath:src/main/java/resources/mapper/*.xml
+
+mybatis-plus:
+  mapper-locations: com/cy/dao/*.xml
+#  type-aliases-package: com.cy.dao
