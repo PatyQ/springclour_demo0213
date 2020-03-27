@@ -6,7 +6,6 @@ import java.util.List;
 public class ForeachDemo {
     static class Student{
         private String name;
-
         private Integer age;
 
         public Student(String name, Integer age) {
