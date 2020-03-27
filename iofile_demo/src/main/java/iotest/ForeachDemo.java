@@ -31,7 +31,7 @@ public class ForeachDemo {
 
         //开始测试不同方式的for性能
         int listSize = list.size();
-        String searchName = "student666";
+        String searchName = "student6666";
         boolean searchFlag = false;
 
         //基本形式的for循环
