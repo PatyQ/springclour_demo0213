@@ -1,0 +1,26 @@
+
+
+spring:
+  application:
+    name: springcloud-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka
+
+management:
+  endpoints: #端点(配置可以查看服务名称，如果知道服务名称则无需配置)
+    web:
+      exposure:
+        include: '*'
+
+server:
+  port: 8084
+
+zuul:
+  host:
+    connect-timeout-millis: 15000
+    socket-timeout-millis: 10000
+  ignored-services: '*'
+  routes: #routes ：路线
+    springcloud-hystrix: /hy/**

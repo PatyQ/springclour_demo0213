@@ -1,0 +1,10 @@
+server:
+  port: 23001
+
+spring:
+  application:
+    name: springcloud-order01
+feign:
+  hystrix:
+#    开启hystrix功能
+    enabled: true
