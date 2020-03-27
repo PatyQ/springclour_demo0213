@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: springcloud-config-client
+  cloud:
+    config:
+      uri: https://localhost:10113
+
